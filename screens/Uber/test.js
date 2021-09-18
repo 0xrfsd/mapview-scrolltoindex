@@ -38,7 +38,7 @@ const SearchResultsMaps = (props) => {
         }
         const index = places.findIndex(place => place.id === selectedPlaceId)
 
-        flatlist.current.scrollToIndex({ index: index })
+        flatlist.current.scrollToIndex({ animated: false, index: selectedPlaceId })
 
         const selectedPlace = places[index];
 
